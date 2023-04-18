@@ -7,7 +7,7 @@ This repository is for the Edureka DevOps certification project
 CICD Setup:
 
 
-- User the Master server for Jenkins, Ansible, Git etc.
+- Use the Master server for Jenkins, Ansible, Git etc.
 
 - created a Master server on Ubuntu(22.04) and installed jenkins, Ansible, Git.
 

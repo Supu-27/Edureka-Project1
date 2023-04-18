@@ -2,30 +2,12 @@
 This repository is for the Edureka DevOps certification project
 
 
-
-
-![image](https://user-images.githubusercontent.com/125067454/232806310-713bcc2c-9b96-4b21-b19e-bcb0e6418906.png)
-
-
-
-
-
-
-![image](https://user-images.githubusercontent.com/125067454/232809707-097ac7a7-12f5-4264-943b-87d67cb14388.png)
-
-
-
-
-
-
-
-
 # Steps For executing the solution:
 
 CICD Setup:
 
 
-# User the Master server for Jenkins, Ansible, Git etc.
+- User the Master server for Jenkins, Ansible, Git etc.
 
 - created a Master server on Ubuntu(22.04) and installed jenkins, Ansible, Git.
 
@@ -44,7 +26,7 @@ Git :
 ![image](https://user-images.githubusercontent.com/125067454/232808867-0c8c49ff-78ad-4b4f-a946-99c1121e8030.png)
 
 
-# User another server Ubuntu(22.04) for Jenkins Slave Node
+- User another server Ubuntu(22.04) for Jenkins Slave Node
 
 
 ![image](https://user-images.githubusercontent.com/125067454/232810638-fc85ab71-ad5d-43da-86d2-c2da507e1f51.png)
@@ -52,7 +34,7 @@ Git :
 
 
 
-# Add Build Pipeline Plugin and Post -build task plugin to Jenkins on the Master server
+- Add Build Pipeline Plugin and Post -build task plugin to Jenkins on the Master server
 
 Install Python, Open ssh-server and git on the slave node manually
 
@@ -70,8 +52,52 @@ Openssh-server :
 
 
 
-#  Use the image devopsedu/webapp and add PHP website to it using a Dockerfile
+- Use the image devopsedu/webapp and add PHP website to it using a Dockerfile
+
+
+![image](https://user-images.githubusercontent.com/125067454/232816464-fd187ab8-4a03-41e8-b4eb-5ef0851d057c.png)
 
 
 
 
+![image](https://user-images.githubusercontent.com/125067454/232816653-e996deea-9880-4ee6-ba50-9942df084081.png)
+
+
+
+
+
+
+
+
+
+
+- Push the PHP website and Dockerfile to a git repository
+
+- Then Created CI/CD pipeline for automation:
+
+Job1- Install Puppet Agent on Slave
+
+
+![image](https://user-images.githubusercontent.com/125067454/232814393-e97a8e76-6c81-4466-8d90-805c89f4fa4a.png)
+
+
+
+Job2 : Sign the Puppet certificate
+
+
+Job3 : Install Docker on the Jenkins Slave server
+
+
+
+
+
+
+
+
+
+![image](https://user-images.githubusercontent.com/125067454/232806310-713bcc2c-9b96-4b21-b19e-bcb0e6418906.png)
+
+
+
+
+![image](https://user-images.githubusercontent.com/125067454/232809707-097ac7a7-12f5-4264-943b-87d67cb14388.png)
